@@ -1,0 +1,6 @@
+# Rime schema Patch
+# encoding: utf-8
+
+patch:
+  punctuator/symbols/+: 
+    __include: symbols_latexmath:/symbols         # 从 symbols_lataxmath 导入latex数学符号

@@ -1,0 +1,9 @@
+# Rime schema Patch
+# encoding: utf-8
+
+# 全拼和各个双拼有部分拼写规则不通用，需要修改 speller/algebra 下的 __include: algebra_rime_ice 为你所使用的方案
+
+patch:
+  # 修改为小鹤双拼的拼写派生规则，因为不在同一个文件了，前面要加上文件名
+  speller/algebra:
+    __include: radical_pinyin.schema.yaml:/algebra_flypy

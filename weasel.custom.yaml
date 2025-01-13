@@ -2,13 +2,13 @@ customization:
   distribution_code_name: Weasel
   distribution_version: 0.16.3
   generator: "Weasel::UIStyleSettings"
-  modified_time: "Mon Jan 13 14:34:55 2025"
+  modified_time: "Mon Jan 13 22:18:14 2025"
   rime_version: 1.11.2
 patch:
-  # Rime输入法样式
+  "app_options/+":
+    __include: "weasel_style:/app_options"
   "preset_color_schemes/+":
     __include: "weasel_style:/preset_color_schemes"
   "style/+":
     __include: "weasel_style:/style"
-  "app_options/+":
-    __include: "weasel_style:/app_options"
+  "style/color_scheme": Nord

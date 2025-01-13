@@ -1,0 +1,218 @@
+# # 用于 Rime 的 LaTeX 符号输入配置
+#
+# *author: wklchris@github*
+
+# > 注意：本配置文件虽然参照 LaTeX 数学符号命令，但也添加了一些额外的命令。因此，本文件中的输入指令并非与 LaTeX 严格对应（例如，平行四边形符号 `/parm` 、性别符号 `/gender` 等）。
+#
+# 支持的符号（详细列表请参考[完整的符号支持列表](#完整的符号支持列表)一节）：
+#
+# - 常用数学符号，包括几何、微积分。
+# - 特殊字体符号 `/mathbb`，包括数集 ℕ（`/bbn`）等
+# - 被 LaTeX 主数学宏包 amsmath/amssymb 支持的一些常用符号：
+#   * 运算符与关系符
+#   * 箭头符号
+# - 希腊字母：除全称命令（如 `/alpha`）外，额外添加了：
+#   * 小写希腊字母集（包括变体） `/greek`
+#   * 大写希腊字母集 `/greekc`
+#   * 变体希腊字母集 `/greekv`
+# - 罗马字母：小写 `/roman` 与大写 `/romanc` 罗马字母集
+# - 少量其他符号：性别 `/gender`、货币 `$`、温度 `/degree` 等。
+
+
+# *Modified by Romeopai*
+# 为配合rime-ice中以 'V' 开头输出的一系列符号，将原 '/' 符号进行替换。
+
+symbols:
+  # 【通用符号】
+  'Vdots': &dots [ …, ⋯, ⋮, ⋰, ⋱ ]
+  'Vcdots': *dots
+  'Vldots': *dots
+  'Vvdots': *dots
+  'Vddots': *dots
+  'Vforall': ∀
+  'Vexists': ∃
+  'Vbecause': ∵
+  'Vtherefore': ∴
+  'Vsum': ∑
+  'Vprod': ∏
+  'Vsqrt': [ √, ∛, ∜ ]
+  'Vpropto': ∝
+  'Vratio': '∶'
+  'Vinf': &inf ∞
+  'Vinfty': *inf
+  'Vempty': ∅
+  'Vlog': ㏒
+  'Vln': ㏑
+  'Vhslash': ℏ
+  'Vsub': &subscript [ ₀, ₁, ₂, ₃, ₄, ₅, ₆, ₇, ₈, ₉, ₙ ]
+  'Vsubnum': *subscript
+  'Vsup': &supscript [ ⁰, ¹, ², ³, ⁴, ⁵, ⁶, ⁷, ⁸, ⁹, ⁿ ]
+  'Vsupnum': *supscript
+  'Vdegree': [ °, ℃, ℉ ]
+  # 通用字母：数集等
+  'Vell': ℓ
+  'Vmathbb': [ ℂ, ℕ, ℙ, ℚ, ℝ, ℤ ]
+  'Vbbc': ℂ
+  'Vbbn': [ ℕ, ℕ₀, ℕ₊ ]
+  'Vbbp': ℙ
+  'Vbbq': [ ℚ, ℚ₊, ℚ₋ ]
+  'Vbbr': [ ℝ, ℝ₊, ℝ₋ ]
+  'Vbbz': [ ℤ, ℤ₊, ℤ₋ ]
+  # 【几何】
+  'Vangle': [ ∠, ∟, ⦜, ⊾, ∡, ∢ ]
+  'Vparallel': ∥
+  'Vperp': ⊥
+  'Vsim': &sim [ ∼, ≃, ≅ ]
+  'Vsimeq': *sim
+  'Vcircle': [ ○, ●, ◎, ◉ ]
+  'Vsector': [ ⌔, ⌓ ]
+  'Varc': [ ◜, ◝, ◞, ◟ ]
+  'Vellipse': &ellipse [ ⬭, ⬬, ⬯, ⬮ ]
+  'Vtriangle': [ △, ◺, ◿, ▲, ◁, ◀, ▷, ▶, ▽, ▼, ◣, ◢, ◹, ◥, ◸, ◤ ]
+  'Vsquare': [ □, ■ ]
+  'Vrectangle': &rectangle [ ▭, ▬, ▯, ▮ ]
+  'Vrect': *rectangle
+  'Vdiamond': &diamond [ ◇, ◆, ◈ ]
+  'Vlozenge': *diamond
+  'Vparallelogram': &parallelogram [ ▱, ▰ ]
+  'Vparm': *parallelogram
+  'Vpolygon': [ ⬠, ⬟, ⬡, ⬢ ]
+  # 【微积分】
+  'Vpartial': ∂
+  'Vnabla': ∇
+  'Vint': ∫
+  'Viint': ∬
+  'Viiint': ∭
+  'Voint': ∮
+  'Voiint': ∯
+  'Voiiint': ∰
+  # 【二元运算符】
+  'Vplus': [ +, ⁺, ₊, ⊕ ]
+  'Vminus': [ -, ⁻, ₋, ⊖ ]
+  'Vtimes': [ ×, ⊗, ·, ⊙, ∘, ∙, ⋆, ∗ ]
+  'Vdot': &dot [ ·, ⊙, ∘, ∙ ]
+  'Vcdot': *dot
+  'Vstar': [ ⋆, ∗ ]
+  'Vast': '∗' 
+  'Vbullet': ∙
+  'Vdiv': [ ÷, ⊘ ]
+  'Vpm': [ ±, ∓ ]
+  ## 集合二元运算符
+  'Vsetop': [ ∪, ∩, ∖, ∨, ∧ ]
+  'Vcup': ∪
+  'Vcap': ∩
+  'Vsetminus': ∖
+  'Vvee': &vee ∨
+  'Vlor': *vee
+  'Vwedge': &wedge ∧
+  'Vland': *wedge
+  # 【二元关系符】
+  'Veq': [ ≡, ≔, ≈, ≌, ≝, ≜, ≟ ]
+  'Vapprox': ≈
+  'Vneq': [ ≠, ≶, ≷, ⪋, ⪌ ]
+  'Vle': [ '<', '≤', '⩽', '≪', '≯' ]
+  'Vprec': [ ≺, ≼ ] 
+  'Vge': [ '>', '≥', '⩾', '≫', '≮' ]
+  'Vsucc': [ ≻, ≽ ]
+  ## 集合二元关系符
+  'Vsubset': [ ⊂, ⊆, ⫅, ⫋ ]
+  'Vsupset': [ ⊃, ⊇, ⫆, ⫌ ]
+  'Vin': ∈
+  'Vni': ∋
+  'Vnotin': ∉
+  # 【箭头】
+  'Vimplies': [ ⟹, ⇏, ⇒ ]
+  'Vimpliedby': [ ⟸, ⇍, ⇐ ]
+  'Viff': [ ⟺, ⇔ ]
+  'Vleft': &left
+    - &leftarrow ←  # Leftwards arrow
+    - &longleft ⟵  # Long leftwards
+    - ⇦  # Leftwards white
+    - 🡨  # Wide-headed leftwards barb arrow
+    - ↼  # Leftwards harpoon with barb upwards
+    - ↽  # Leftwards harpoon with barb downwards
+    - ⮘  # Three-D top-lighted leftwards equilateral arrowhead
+    - ⮜  # Black leftwards equilateral arrowhead
+  'Vleftarrow': *left
+  'Vlongleft': *longleft
+  'Vright': &right
+    - &rightarrow →
+    - &longright ⟶
+    - ⇨
+    - 🡪
+    - ⮚
+    - ⮞
+  'Vrightarrow': *right
+  'Vlongright': *longright
+  'Vleftright': [ ↔, ⇄, ⇆, ⇌, ⇋, ⇔ ]  # 双向
+  ## 上下两个方向无长箭头
+  'Vup': &up
+    - &uparrow ↑
+    - ⇧
+    - 🡩
+    - ⮙
+    - ⮝
+  'Vuparrow': *up
+  'Vdown': &down
+    - &downarrow ↓
+    - ⇩
+    - 🡫
+    - ⮛
+    - ⮟
+  'Vdownarrow': *down
+  'Vupdown': [ ↕, ⇅, ⇵, ⥮, ⥯, ⇕ ]  # 双向
+  ## 其余四个方向
+  'Vnwarrow': &nwarrow ↖
+  'Vnearrow': &nearrow ↗
+  'Vswarrow': &swarrow ↙
+  'Vsearrow': &searrow ↘
+  ## 基础箭头集合
+  'Varrow': 
+    - *leftarrow
+    - *rightarrow
+    - *uparrow
+    - *downarrow
+    - *nwarrow
+    - *nearrow
+    - *swarrow
+    - *searrow
+  # 【希腊字母】：Vgreek, Vgreekc & Vgreekv. C for Capitalized, V for Variant.
+  'Vgreek': [ α, β, γ, δ, ϵ, ε, ζ, η, θ, ϑ, ι, κ, ϰ, λ, μ, ν, ξ, ο, π, ϖ, ρ, ϱ, σ, ς, τ, υ, ϕ, φ, χ, ψ, ω ]
+  'Vgreekv': [ ε, ϑ, ϰ, ϖ, ϱ, ς, φ ]
+  'Vgreekc': [ Α, Β, Γ, Δ, Ε, Ζ, Η, Θ, Ι, Κ, Λ, Μ, Ν, Ξ, Ο, Π, Ρ, Σ, Τ, Υ, Φ, Χ, Ψ, Ω ]
+  'Valpha': [ α, Α ]
+  'Vbeta': [ β, Β ]
+  'Vgamma': [ γ, Γ ]
+  'Vdelta': [ δ, Δ ]
+  'Vepsilon': [ ϵ, ε, Ε ]
+  'Vvarepsilon': ε
+  'Vzeta': [ ζ, Ζ ]
+  'Veta': [ η, Η ]
+  'Vtheta': [ θ, ϑ, Θ ]
+  'Vvartheta': ϑ
+  'Viota': [ ι, Ι ]
+  'Vkappa': [ κ, ϰ, Κ ]
+  'Vvarkappa': ϰ
+  'Vlambda': [ λ, Λ ]
+  'Vmu': [ μ, Μ ]
+  'Vnu': [ ν, Ν ]
+  'Vxi': [ ξ, Ξ ]
+  'Vomicron': [ ο, Ο ]
+  'Vpi': [ π, ϖ, Π ]
+  'Vvarpi': ϖ
+  'Vrho': [ ρ, ϱ, Ρ ]
+  'Vvarrho': ϱ
+  'Vsigma': [ σ, ς, Σ ]
+  'Vvarsigma': ς
+  'Vtau': [ τ, Τ ]
+  'Vupsilon': [ υ, Υ ]
+  'Vphi': [ ϕ, φ, Φ ]
+  'Vvarphi': φ
+  'Vchi': [ χ, Χ ]
+  'Vpsi': [ ψ, Ψ ]
+  'Vomega': [ ω, Ω ]
+  # 【罗马数字】
+  'Vroman': [ ⅰ, ⅱ, ⅲ, ⅳ, ⅴ, ⅵ, ⅶ, ⅷ, ⅸ, ⅹ, ⅺ, ⅻ, ⅼ, ⅽ, ⅾ, ⅿ ]
+  'Vromanc': [ Ⅰ, Ⅱ, Ⅲ, Ⅳ, Ⅴ, Ⅵ, Ⅶ, Ⅷ, Ⅸ, Ⅹ, Ⅺ, Ⅻ, Ⅼ, Ⅽ, Ⅾ, Ⅿ ]
+  # 【其他】
+  'Vgender': [ ♂, ♀, ⚢, ⚣, ⚤, ⚥, ⚦ ]

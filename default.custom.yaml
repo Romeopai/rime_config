@@ -2,12 +2,17 @@ customization:
   distribution_code_name: Weasel
   distribution_version: 0.16.3
   generator: "Rime::SwitcherSettings"
-  modified_time: "Mon Jan 13 14:43:43 2025"
+  modified_time: "Mon Jan 13 22:17:57 2025"
   rime_version: 1.11.2
 patch:
+  menu:
+    page_size: 9
   schema_list:
     - {schema: double_pinyin_flypy}
     - {schema: japanese}
     - {schema: melt_eng}
     - {schema: rime_ice}
     - {schema: spanish}
+    - {schema: luna_pinyin}
+    - {schema: luna_pinyin_fluency}
+    - {schema: luna_pinyin_simp}
