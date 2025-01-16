@@ -125,6 +125,7 @@ preset_color_schemes:
 
 # 为特定的应用单独设定选项
 app_options:
+  # 配置设定说明
   appname.exe: # 带 .exe 的进程名，全小写
     ascii_mode: true # 英文模式
     inline_preedit: true # 行内显示预编辑区。当前版本小狼毫将 inline_preedit 设定为 false 时，会在输入时预插入一个空格，这在 Firefox 等应用中会引发问题，可以在此处为这些应用单独指定 inline_preedit。refer <https://github.com/rime/weasel/issues/946>
@@ -132,12 +133,20 @@ app_options:
   appname2.exe:
     ascii_mode: false # 非英文模式
   # 自定义应用选项
-  code.exe: # Vscode
+  code.exe: # VS code
     ascii_mode: true
     vim_mode: true
     inline_preedit: true
   obsidian.exe: # Obsidian
     ascii_mode: true
     vim_mode: true
+  zwcad.exe: # 中望CAD
+    ascii_mode: true
+  windowsterminal.exe: # Windows terminal
+    ascii_mode: true
+  blender.exe: # Blender
+    ascii_mode: true
+  krita.exe: # Krita
+    ascii_mode: true
   cmd.exe:
     ascii_mode: true
