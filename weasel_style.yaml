@@ -140,7 +140,7 @@ app_options:
   obsidian.exe: # Obsidian
     ascii_mode: true
     vim_mode: true
-  zwcad.exe: # 中望CAD
+  gcad.exe: # 浩辰CAD
     ascii_mode: true
   windowsterminal.exe: # Windows terminal
     ascii_mode: true

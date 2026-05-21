@@ -3,4 +3,4 @@
 
 patch:
   punctuator/symbols/+: 
-    __include: symbols_latexmath:/symbols         # 从 symbols_lataxmath 导入latex数学符号
+    __include: symbols_latexmath:/symbols         # 补丁，添加 symbols_lataxmath 符号支持
