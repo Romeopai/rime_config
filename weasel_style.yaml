@@ -194,3 +194,5 @@ app_options:
     ascii_mode: true
   cmd.exe:
     ascii_mode: true
+  neovide.exe:
+    ascii_mode: true
